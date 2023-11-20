@@ -4,12 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import com.locationms.project.model.LocationDto;
 import com.locationms.project.repository.LocationRepository;
 import com.locationms.project.service.LocationService;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class LocationMsApplication implements CommandLineRunner {
 
 	@Autowired
